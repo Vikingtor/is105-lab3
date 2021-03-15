@@ -1,5 +1,5 @@
 ; ----------------------------------------------------------------------------------------
-; Writes "Hello, World" to the console using only system calls. Runs on 64-bit Linux only.
+; Writes "Viktor var her! (Assembly)" to the console using only system calls. Runs on 64-bit Linux only.
 ; To assemble and run:
 ;
 ;     nasm -felf64 hello.asm && ld hello.o && ./a.out
@@ -18,4 +18,4 @@ _start:   mov       rax, 1                  ; system call for write
           syscall                           ; invoke operating system to exit
 
           section   .data
-message:  db        "Viktor var her! (Assembly)", 10      ; note the newline at the end
+message:  db        "Viktor var her! (Assembly)\n", 10      ; note the newline at the end
