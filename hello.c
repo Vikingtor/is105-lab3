@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main() {
-    printf("Hello, World\n");
+    printf("Viktor var her! (C)\n");
 }
